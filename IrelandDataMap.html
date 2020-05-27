@@ -1,0 +1,54 @@
+<!-- 
+Population data from: https://www.cso.ie/en/releasesandpublications/ep/p-rsdgi/regionalsdgsireland2017/nt/#indicatorTitle_175227 
+
+Third level data from: https://www.cso.ie/en/releasesandpublications/ep/p-rsdgi/regionalsdgsireland2017/ei/
+
+Based on the USA example from the textbook.
+
+Extra work done:
+(1) Additional data set
+(2) I used the data sets to create a third visualization. Since I had population and number of higher education students, I divided them to get the percent of the population in each county that is in higher education.
+(3) You can hover over each county to get the data for that county based on the current data being visualized
+-->
+
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+
+<head>
+    <title>Ireland Map Assignment 10</title>
+</head>
+
+<body>
+    <h1 id = "header" style = "color:rgb(49, 163, 84)"> Ireland's 2016 Population by County </h1>
+    
+    <select id="options" style="font-size:12px">
+        <option value="o1"> Population </option>
+        <option value="o2"> Third Level </option>
+        <option value="o3"> Percent in Third Level </option>
+    </select>
+    
+    <br>
+    
+    <svg width="960" height="500"></svg>
+    <script src="//d3js.org/d3.v5.min.js"></script>
+    <script src="//d3js.org/topojson.v2.min.js"></script>
+    <script type = "application/javascript" src = "IrelandPopStudents.js"> </script>
+    
+    <div style="font-size:12px">
+        <ul>
+            <li> <a href="https://glindsey22.github.io/Assignment-10/"> Github Link </a> </li>
+            <li> Data Sources:
+                <ul>
+                    <li> <a href="https://www.cso.ie/en/releasesandpublications/ep/p-rsdgi/regionalsdgsireland2017/nt/"> Ireland Population 2016, CSO </a> </li>
+                    <li> <a href="https://www.cso.ie/en/releasesandpublications/ep/p-rsdgi/regionalsdgsireland2017/ei/"> Ireland Third Level Students 2016/2017, CSO </a> </li>
+                </ul>
+            </li>
+            <li> Gabriella Lindsey </li>
+            <li> Instructor: Suresh Lodha </li>
+            <li> CSE 163: Data Programming for Visualization </li>
+            <li> Spring 2020 </li>
+        </ul>
+    </div>
+    
+</body>
